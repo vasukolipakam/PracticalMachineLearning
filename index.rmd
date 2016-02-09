@@ -2,9 +2,15 @@
 title: "PracticalMachineLearning Course Project"
 author: "V.Kolipakam"
 date: "February 9, 2016"
-output: html_document
----
+output:
+  html_document:
+    fig_caption: yes
+    keep_md: yes
+    
+    
+    https://github.com/vasukolipakam/PracticalMachineLearning  
 
+    
 INTRODUCTION
 ============
 
@@ -118,7 +124,11 @@ cmtree <- confusionMatrix(predictionsA1, myTesting$classe)
 cmtree
 
 
+
 plot(cmtree$table, col = cmtree$byClass, main = paste("Decision Tree Confusion Matrix: Accuracy =", round(cmtree$overall['Accuracy'], 4)))
+
+
+
 
 
 Prediction with random forests:
