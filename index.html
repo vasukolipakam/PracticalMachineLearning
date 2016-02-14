@@ -159,7 +159,7 @@ if (window.hljs && document.readyState && document.readyState === "complete") {
 <h2>Prediction with random forests:</h2>
 <p>set.seed(12345) modFitB1 &lt;- randomForest(classe ~ ., data=myTraining) predictionB1 &lt;- predict(modFitB1, myTesting, type = “class”) cmrf &lt;- confusionMatrix(predictionB1, myTesting$classe) cmrf</p>
 <p>plot(modFitB1)</p>
-<p>plot(cmrf<span class="math">\(table, col = cmtree\)</span>byClass, main = paste(“Random Forest Confusion Matrix: Accuracy =”, round(cmrf$overall[‘Accuracy’], 4)))</p>
+<p>plot(cmrf<span class="math">\(table, col = cmrf\)</span>byClass, main = paste(“Random Forest Confusion Matrix: Accuracy =”, round(cmrf$overall[‘Accuracy’], 4)))</p>
 </div>
 <div id="results-of-test-data" class="section level2">
 <h2>Results of test Data :</h2>
